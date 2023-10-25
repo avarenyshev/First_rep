@@ -10,12 +10,11 @@ public class SearchTests {
     public void init(){
         Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 240000;
-
     @Test
 void successfulSearchTest() {
     open("https://www.yandex.ru/");
-    $("[name=q]").setValue("selenide").pressEnter();
+    $("[name=q]").setValue("selenum").pressEnter();
     $("[id=search]").shouldHave(text("https://selenide.org"));
 }
-        private static
+        private static getmessage ()
     }
